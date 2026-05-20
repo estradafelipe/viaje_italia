@@ -208,10 +208,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-b);font-si
 .login-btn:hover{background:var(--verde-l)}
 .login-error{margin-top:14px;font-size:13px;color:#ef9a9a;min-height:20px;opacity:0;transition:opacity .3s}
 .login-error.show{opacity:1}
-/* MUSIC PLAYER */
-#music-player{position:fixed;bottom:24px;right:24px;z-index:500;border-radius:12px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.12);transition:opacity .3s}
-#music-player iframe{display:block;width:240px;height:135px}
-#music-toggle{position:absolute;top:6px;right:6px;background:rgba(0,0,0,.5);border:none;border-radius:6px;color:#fff;font-size:11px;padding:3px 7px;cursor:pointer;letter-spacing:1px}
 /* RESPONSIVE */
 @media(max-width:768px){
   body{font-size:16px}
@@ -254,11 +250,6 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-b);font-si
 </style>
 </head>
 <body>
-<!-- MUSIC PLAYER -->
-<div id="music-player">
-  <iframe src="https://www.youtube.com/embed/8-eNdHn9uRE?si=3fK8yE0DIwNcynoT&autoplay=1&loop=1&playlist=8-eNdHn9uRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <button id="music-toggle" onclick="var p=document.getElementById('music-player');p.style.opacity=p.style.opacity==='0'?'1':'0';this.textContent=p.style.opacity==='0'?'♪':'✕'">✕</button>
-</div>
 <!-- LOGIN -->
 <div id="login-overlay">
   <div class="login-box">
