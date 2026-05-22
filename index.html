@@ -817,17 +817,16 @@ body{background:var(--cream);color:var(--dark);font-family:var(--font-b);font-si
     </div>
   </div>
 </section>
-<!-- SPOTIFY PLAYER -->
-<div id="spotify-bar" style="position:fixed;bottom:0;left:0;right:0;z-index:200;background:rgba(14,26,15,.97);backdrop-filter:blur(20px);border-top:1px solid rgba(255,255,255,.08);padding:12px 32px;display:flex;align-items:center;justify-content:center;gap:16px">
-  <iframe id="spotify-iframe" data-testid="embed-iframe" style="border-radius:10px;display:block" src="https://open.spotify.com/embed/track/7037bX3jdaUWUAXL12CHGy?utm_source=generator&autoplay=1" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
-  <button onclick="document.getElementById('spotify-bar').style.display='none'" style="background:none;border:none;color:rgba(255,255,255,.4);font-size:18px;cursor:pointer;flex-shrink:0;padding:4px 8px;line-height:1" title="Cerrar">✕</button>
-</div>
 <!-- FOOTER -->
-<footer class="footer" style="padding-bottom:120px">
+<footer class="footer">
   <div class="footer-title">Ita<em>lia</em></div>
   <div class="footer-line"></div>
   <div class="footer-sub">Estate 2026 · Angie · Buon viaggio 🇮🇹</div>
 </footer>
+<!-- SPOTIFY PLAYER -->
+<div style="background:#060D07;padding:32px 40px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:center">
+  <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/7037bX3jdaUWUAXL12CHGy?utm_source=generator&autoplay=1" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="eager"></iframe>
+</div>
 <script>
 // LOGIN
 (function(){
